@@ -2,6 +2,9 @@
   "name": "si",
   "version": "0.0.1",
   "main": "index.coffee",
+  "scripts": {
+    "start": "./node_modules/.bin/coffee index.coffee"
+  },
   "dependencies": {
     "express": "~3.4.7",
     "coffee-script": "~1.6.3",
