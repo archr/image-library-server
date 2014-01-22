@@ -21,9 +21,9 @@ fs.readdirSync(modelsPath).forEach (file) ->
   model = require(modelsPath + '/' + file)()
   app.models[model.modelName] = model if model.modelName
 
-modules = ['main']
+modules = ['images', 'main']
 for module in modules
-	require("./app/#{module}")(app)
+	require("./app/controllers/#{module}")(app)
 
 app.listen app.config.port
 console.log "app runing in port #{app.config.port}"
