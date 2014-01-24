@@ -1,5 +1,5 @@
 module.exports = (app) ->
-	web = require('./routes/web')(app)
-	app.use('/', web.middleware)
+  web = require('./routes/web')(app)
+  app.use('/', web.middleware)
 
-	return
+  return
